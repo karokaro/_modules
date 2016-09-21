@@ -1,0 +1,94 @@
+@import "../../../_cssDefaults/_base";
+@import "../../../_cssDefaults/_colors";
+@import "../../../_cssDefaults/_typography"; 
+
+.m-wrapper {
+	margin: 0 auto;
+	padding: 0 20px 0; 
+	@media (min-width: 1170px) {
+		width: 1200px;
+	}
+}
+.b-newsletter {
+	background: url(../../../images/newsletter.jpg) center top no-repeat;
+	margin-bottom: 20px;
+	.m-wrapper {
+		width: 82%;
+		padding-left: 20px;
+		padding-top: 27px;
+		@media (min-width: 400px) {
+			padding-top: 35px;
+		}
+		@media (min-width: 1170px) {
+			width: 1170px;
+			margin: 0 auto;
+			padding-top: 65px;
+			padding-bottom: 55px;
+		}
+	}
+	h6 {
+		color: $cl-white;
+		font: 300 18px $font-primary;
+		margin-bottom: 15px;
+		@media (min-width: 700px) {
+			margin-bottom: 20px;
+		}
+	}
+	.m-mail {
+		.m-mail_input {
+			position: relative;
+			@media (min-width: 700px) {
+				max-width: 600px;
+			}
+			@media (min-width: 1200px) {
+				max-width: 772px;
+			}
+			.email {
+				background: url(../images/envelope.png) no-repeat;
+				width: 15px;
+				height: 11px;
+				display: block;
+				position: absolute;
+				top: 15px;
+				left: 20px;
+			}
+		}
+		input {
+			background: 0;
+			border: 1px solid $cl-white;
+			padding: 13px 20px;
+			margin-bottom: 15px; 
+			margin-right: 25px;
+			width: 69%;
+			color: $cl-white;
+			min-width: 153px;
+			padding-left: 55px;
+			@media (min-width: 1170px) {
+				float: left;
+				width: 100%;
+			}
+			
+		}
+		button {
+			background-color: $cl-white;
+			color: $cl-black;
+			font: 700 18px $font-primary;
+			border: 0;
+			text-transform: uppercase;
+			width: 230px;
+			padding: 10px 20px;
+			margin-bottom: 40px;
+			cursor: pointer;
+			&:hover {
+				color: $cl-white;
+				background-color: $cl-grey3;
+			}
+			@media (min-width: 700px) {
+				float: left;
+			}
+			@media (min-width: 1200px) {
+				float: right;
+			}
+		}
+	}
+}
